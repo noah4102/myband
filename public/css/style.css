@@ -1,0 +1,425 @@
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper a {
+    font-family: Arial;
+    color: black;
+    font-size: 11px;
+    padding: 6px 16px 6px 16px;
+    text-decoration: none;
+}
+
+#wrapper a:hover {
+    text-decoration: none;
+    background-color: #3F8AFF;
+    color: white;
+}
+
+/* searchbar */
+
+#zoek {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: right;
+}
+
+/* The sidebar */
+
+#sidebar {
+    margin-top: 110px;
+    margin-left: 50px;
+    padding-left: 10px;
+    width: 160px;
+
+    left: 0;
+    background-color: lightgrey;
+    overflow-x: hidden;
+}
+
+#sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#sidebar h2 {
+    padding-left: 5px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/*title */
+#title {
+    text-align: center;
+}
+
+/*news page*/
+
+#content {
+    text-align: center;
+}
+
+#content img {
+    max-width: 300px;
+    max-height: 400px;
+}
+
+/*nav buttons */
+
+#buttons2 {
+     text-align: center;
+     float: none;
+     color: black;
+     background-color: #00A8EF;
+ }
+
+#buttons2 a:hover {
+    text-align: center;
+    float: none;
+    color: white;
+    background-color: #0000cf;
+}
+
+
+/* title-foto: NEWS */
+
+#wrap {
+    padding-top: 50px;
+}
+
+/* title: NEWS */
+
+#wrap-home {
+    padding-top: 35px;
+    text-align: center;
+}
+
+/* title head pagina */
+
+#title {
+    padding-top: 35px;
+}
+
+#login_wrapper {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* home page */
+
+#homenews #home-img img {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+/* homepage content */
+#homenews {
+    margin: 0 auto;
+    width: 800px;
+    padding-bottom: 100px;
+    height: auto;
+    display: block;
+    min-height: 500px;
+}
+
+#homenews img {
+    max-width: 300px;
+    max-height: 400px;
+}
+
+/* img css */
+
+#home-text {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+#home-img {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+    max-height: 400px;
+    width: 50%;
+    float: right;
+}
+
+#home-img img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    max-width: 210px;
+    max-height: 300px;
+}
+
+#home-img:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* contact page */
+
+#contact {
+    float: right;
+    padding-top: 50px;
+}
+
+
+
+/* edit page (beheer)*/
+
+#beheer_wrap {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* edit page */
+
+#edit_wrapper {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+#edit_wrapper textarea {
+    max-height: 350px;
+    max-width: 400px;
+}
+
+/* admin page */
+
+#wrapper {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*Modaal venster css */
+
+.modal-item {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-item:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Modaal Content (img) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    heigth: auto;
+    max-height: 800px;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    border-right: 2px solid black;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(252, 255, 250);
+    opacity: 1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0017e1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #3F8AFF;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+    width: 20px;
+    background-color: transparent;
+}
+
+.sidenav .closebtn:hover {
+    color: red;
+}
+
+.fas{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.balk{
+    background-image: url('../img/pattern-tile.jpg');
+    padding-bottom: 30px;
+}
+
+#info {
+    padding-left: 10px;
+}
+
+#zoek_wrap {
+     text-align: center;
+}
+
+#zoek_wrap a {
+    color: black;
+}
+
+#zoek_wrap a:hover {
+
+}
+
+/* Zoek knop + veld */
+
+#zoekveld {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+#zoekknop {
+    padding: 6px ;
+    margin-top: 8px;
+    font-size: 17px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+/* Zoek knop + veld */
+
+#events {
+    text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 650px) {
+    #sidebar {
+        margin-top: 110px;
+        width: 100%;
+    }
+    #contact {
+        padding-top: 170px;
+    }
+}
+
+
+
